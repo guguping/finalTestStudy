@@ -1,0 +1,47 @@
+<%@page import="com.test.test1.dao.MemberDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		request.setCharacterEncoding("UTF-8");
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		String dept = request.getParameter("dept");
+		String position = request.getParameter("position");
+		String duty = request.getParameter("duty");
+		String phone = request.getParameter("phone");
+		System.out.println(id+","+name+","+dept+","+position+","+duty+","+phone+",");
+		MemberDAO memberDAO = new MemberDAO();
+		if(id != null){
+			memberDAO.saveMember(id, name, dept, position, duty, phone);			
+		}
+		
+	%>
+	<h2>인사관리 시스템</h2>
+	<button onclick="find()">조회</button>
+	<button onclick="save()">사원등록</button>
+	<button onclick="update()">정보변경</button>
+	<button onclick="deleteMember()">퇴사처리</button>
+	<button onclick="window.close()">종료</button>
+</body>
+<script>
+	const find = () => {
+		location.href = "findMemberForm.jsp";
+	}
+	const save = () => {
+		location.href = "saveMemberForm.jsp";
+	}
+	const update = () => {
+		location.href = "updateMemberForm.jsp";
+	}
+	const deleteMember = () => {
+		location.href = "deleteMemberForm.jsp";
+	}
+</script>
+</html>

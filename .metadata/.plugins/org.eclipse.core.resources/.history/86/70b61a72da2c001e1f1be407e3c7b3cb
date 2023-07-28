@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>인사관리 조회화면</h2>
+	<form action="" method="get">
+	</form>
+</body>
+</html>

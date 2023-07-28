@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table, tr, td, th {
+		border: 1px solid black;
+		text-align: center;
+	}
+	input {
+		border: none;
+		outline: none;
+	}
+</style>
+</head>
+<body>
+	<h2>인사관리 사원등록화면</h2>
+	<form action="saveMemberForm.jsp" method="post">
+	<table>
+		<tr>
+			<th><label for="name">성명: </label></th>
+			<th><input type="text" id="name" name="name"></th>
+		</tr>
+		<tr>
+			<th><label for="dept">소속부서: </label></th>
+			<th><input type="text" id="dept" name="dept"></th>
+		</tr>
+		<tr>
+			<th><label for="position">직급: </label></th>
+			<th><input type="text" id="position" name="position"></th>
+		</tr>
+		<tr>
+			<th><label for="duty">직책: </label></th>
+			<th><input type="text" id="duty" name="duty"></th>
+		</tr>
+		<tr>
+			<th><label for="phone">연락처: </label></th>
+			<th><input type="text" id="phone" name="phone"></th>
+		</tr>
+		<tr>
+			<th><label for="name">성명: </label></th>
+			<th><input type="text" id="name" name="name"></th>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>인사관리 조회화면</h2>
+	<form action="findMember.jsp" method="get">
+		<input type=" value="id" name="searchType">
+		사원번호로 조회: <input type="text" name="idValue"><br>
+		<input type="radio" name="saerchType">
+	</form>
+</body>
+</html>

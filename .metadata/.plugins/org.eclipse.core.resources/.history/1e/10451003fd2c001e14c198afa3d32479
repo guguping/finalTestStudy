@@ -1,0 +1,26 @@
+<%@page import="com.test.test1.dao.MemberDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+		request.setCharacterEncoding("UTF-8");
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		String dept = request.getParameter("dept");
+		String position = request.getParameter("position");
+		String duty = request.getParameter("duty");
+		String phone = request.getParameter("phone");
+		System.out.println(id+","+name+","+dept+","+position+","+duty+","+phone+",");
+		MemberDAO memberDAO = new MemberDAO();
+		if(id != null){
+			memberDAO.saveMember(id, name, dept, position, duty, phone);			
+		}
+	%>
+</body>
+</html>

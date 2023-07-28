@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>직원 정보 조회 결과</h2>
+	<!--
+		1. findMemberForm에서 전달받은 파라미터 값 가져오기
+		2. 파라미터 값을 DB에서 조회하고 결과 리턴 받기
+		3. 리턴 값 화면에 출력하기 
+	 -->
+</body>
+</html>

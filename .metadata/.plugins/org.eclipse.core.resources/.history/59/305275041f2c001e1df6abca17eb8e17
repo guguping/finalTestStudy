@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index.jsp</title>
+</head>
+<body>
+	<h2>hello servlet!!</h2>
+	<a href="hello.jsp">hello.jsp로 이동</a>
+	<!-- param1.jsp에 get방식으로 p1="안녕" p2="반가워" 를 보내봅시다. -->
+	<a href="param1.jsp?p1="안녕"&p2="반가워"">param1.jsp로 이동</a>
+</body>
+</html>

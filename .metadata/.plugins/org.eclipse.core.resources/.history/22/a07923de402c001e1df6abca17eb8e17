@@ -1,0 +1,21 @@
+<%@page import="java.util.List"%>
+<%@page import="com.icia.ex.repository.ExRepository"%>
+<%@page import="com.icia.ex.dto.ExDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>select.jsp</title>
+</head>
+<body>
+	<h2>select.jsp</h2>
+	<%
+		ExRepository ex = new ExRepository();
+		List<ExDTO> list = ex.findAll();
+		
+	
+	%>
+</body>
+</html>
