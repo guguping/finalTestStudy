@@ -5,8 +5,12 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.icia.ex.dto.ExDTO"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.test.test1.dto.MemberDTO"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.test.test2.dto.MemberDTO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.test.test3.dto.MemberDTO"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.test.test3.dto.VoteDTO"/>
+    <fullyQualifiedTypeName name="com.test.test3.dto.RankingDTO"/>
 </qualifiedTypeNameHistroy>

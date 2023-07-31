@@ -12,11 +12,12 @@
             margin: 0;
         }
         
-        #contents {
-			height: 80%;       
+       #contents {
+			height: 80%;        
             background-color: burlywood;
+            text-align:center;
             padding: 20px;
-        }
+    	}
         
         table, tr, th, td {
         	border: 1px solid black;
@@ -24,6 +25,8 @@
         
         input {
         	outline: none;
+        	border: none;
+        	height: 25px;
         }
 </style>
 </head>
@@ -37,7 +40,7 @@
 
 <div id="contents">
 <h2>홈쇼핑 회원 등록</h2>
-	<form action="saveMember.jsp" method="post">
+	<form action="saveMember.jsp" method="post" name="saveForm">
 		<table>
 			<tr>
 				<th><label for="custno">회원번호(자동발생)</label></th>			
@@ -68,10 +71,10 @@
 				<th><input type="text" id="city" name="city"></th>
 			</tr>
 			<tr>
-				<td colspan="2">
-					<button type="submit">등록</button>
+				<th colspan="2">
+					<button type="button" onclick="saveCheck()">등록</button>
 					<button type="button" onclick="location.href='index.jsp'">취소</button>
-				</td>
+				</th>
 			</tr>
 		</table>
 	</form>
@@ -80,8 +83,34 @@
 <%@include file="footer.jsp"%>
 </body>
 <script>
-
-	const custname = 
-
+    function saveCheck() {
+        if (document.saveForm.custname.value == "") {
+            alert("이름을 입력해주세요");
+            document.saveForm.custname.focus();
+            return false;
+        } else if (document.saveForm.phone.value == "") {
+            alert("전화번호를 입력해주세요");
+            document.saveForm.phone.focus();
+            return false;
+        } else if (document.saveForm.address.value == "") {
+            alert("주소를 입력해주세요");
+            document.saveForm.address.focus();
+            return false;
+        } else if (document.saveForm.joindate.value == "") {
+            alert("가입일자를 입력해주세요");
+            document.saveForm.joindate.focus();
+            return false;
+        } else if (document.saveForm.grade.value == "") {
+            alert("고객등급을 입력해주세요");
+            document.saveForm.grade.focus();
+            return false;
+        } else if (document.saveForm.city.value == "") {
+            alert("도시코드를 입력해주세요");
+            document.saveForm.city.focus();
+            return false;
+        }
+        alert("회원등록이 완료되었습니다.");
+        document.saveForm.submit();
+    }
 </script>
 </html>
